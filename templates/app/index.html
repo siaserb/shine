@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Welcome on the home page!</h1>
+  <div class="line"></div>
+  <h2>Here you can find some statistics</h2>
+  <ul>
+    <li class="list-group-item"><strong>Redactors:</strong> {{ num_redactors }}</li>
+    <li class="list-group-item"><strong>Newspapers:</strong> {{ num_newspapers }}</li>
+    <li class="list-group-item"><strong>Topic:</strong> {{ num_topics }}</li>
+  </ul>
+
+  <p>You have visited this page
+    {{ num_visits }} time{{ num_visits|pluralize }}.
+  </p>
+
+{% endblock %}
