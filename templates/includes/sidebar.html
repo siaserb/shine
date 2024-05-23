@@ -5,19 +5,16 @@
 
     <ul class="list-unstyled components">
         <li>
-            <a href="#">Home</a>
+            <a href="{% url 'app:index' %}">Home</a>
         </li>
         <li>
-            <a href="#">About</a>
+            <a href="{% url 'app:redactor-list' %}">Redactors</a>
         </li>
         <li>
-            <a href="#">Pages</a>
+            <a href="{% url 'app:newspaper-list' %}">Newspapers</a>
         </li>
         <li>
-            <a href="#">Portfolio</a>
-        </li>
-        <li>
-            <a href="#">Contact</a>
+            <a href="{% url 'app:topic-list' %}">Topics</a>
         </li>
     </ul>
 

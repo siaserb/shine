@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.urls import reverse
 
 
 class Redactor(AbstractUser):
@@ -7,6 +8,9 @@ class Redactor(AbstractUser):
 
     def __str__(self):
         return f"{self.username} ({self.first_name} {self.last_name})"
+
+    def get_absolute_url(self):
+        return reverse("app:redactor-detail", kwargs={"pk": self.pk})
 
 
 class Topic(models.Model):

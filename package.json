@@ -1,0 +1,469 @@
+[
+  {
+    "model": "app.topic",
+    "pk": 1,
+    "fields": {
+      "name": "Politics"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 2,
+    "fields": {
+      "name": "Sports"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 3,
+    "fields": {
+      "name": "Technology"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 4,
+    "fields": {
+      "name": "Health"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 5,
+    "fields": {
+      "name": "Science"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 6,
+    "fields": {
+      "name": "Education"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 7,
+    "fields": {
+      "name": "Environment"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 8,
+    "fields": {
+      "name": "Business"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 9,
+    "fields": {
+      "name": "Entertainment"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 10,
+    "fields": {
+      "name": "Travel"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 11,
+    "fields": {
+      "name": "Food"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 12,
+    "fields": {
+      "name": "Fashion"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 13,
+    "fields": {
+      "name": "Culture"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 14,
+    "fields": {
+      "name": "Lifestyle"
+    }
+  },
+  {
+    "model": "app.topic",
+    "pk": 15,
+    "fields": {
+      "name": "Economics"
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor1",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "redactor1@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor2",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "redactor2@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor3",
+      "first_name": "Bob",
+      "last_name": "Johnson",
+      "email": "redactor3@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor4",
+      "first_name": "Alice",
+      "last_name": "Williams",
+      "email": "redactor4@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 4,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor5",
+      "first_name": "Chris",
+      "last_name": "Brown",
+      "email": "redactor5@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 5,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor6",
+      "first_name": "Emily",
+      "last_name": "Davis",
+      "email": "redactor6@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 6,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor7",
+      "first_name": "Michael",
+      "last_name": "Miller",
+      "email": "redactor7@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 7,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor8",
+      "first_name": "Sarah",
+      "last_name": "Wilson",
+      "email": "redactor8@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 8,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor9",
+      "first_name": "David",
+      "last_name": "Moore",
+      "email": "redactor9@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 9,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor10",
+      "first_name": "Laura",
+      "last_name": "Taylor",
+      "email": "redactor10@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 10,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor11",
+      "first_name": "Robert",
+      "last_name": "Anderson",
+      "email": "redactor11@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 11,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 12,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor12",
+      "first_name": "Jennifer",
+      "last_name": "Thomas",
+      "email": "redactor12@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 12,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor13",
+      "first_name": "Daniel",
+      "last_name": "Jackson",
+      "email": "redactor13@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 13,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 14,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor14",
+      "first_name": "Patricia",
+      "last_name": "White",
+      "email": "redactor14@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 14,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.redactor",
+    "pk": 15,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$EAhYkW4kUmfA$9NCMKKu2E2ZZ8eWYI9Aqv0ItYAwClTnH4K0nHH/N0V8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "redactor15",
+      "first_name": "Charles",
+      "last_name": "Harris",
+      "email": "redactor15@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "years_of_experience": 15,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.newspaper",
+    "pk": 1,
+    "fields": {
+      "title": "Breaking News: Politics Today",
+      "content": "Today's political news highlights major events...",
+      "published_date": "2024-05-20",
+      "topics": [1, 2],
+      "publishers": [1, 2]
+    }
+  },
+  {
+    "model": "app.newspaper",
+    "pk": 2,
+    "fields": {
+      "title": "Sports Update: Championship Finals",
+      "content": "The finals of the championship are happening today...",
+      "published_date": "2024-05-21",
+      "topics": [2, 3],
+      "publishers": [3, 4]
+    }
+  },
+  {
+    "model": "app.newspaper",
+    "pk": 3,
+    "fields": {
+      "title": "Technology Advances in AI",
+      "content": "Artificial Intelligence continues to grow...",
+      "published_date": "2024-05-22",
+      "topics": [3, 4],
+      "publishers": [5, 6]
+    }
+  },
+  {
+    "model": "app.newspaper",
+    "pk": 4,
+    "fields": {
+      "title": "Health News: New Research Findings",
+      "content": "Recent studies show new insights into health...",
+      "published_date": "2024-05-23",
+      "topics": [4, 5],
+      "publishers": [7, 8]
+    }
+  },
+  {
+    "model": "app.newspaper",
+    "pk": 5,
+    "fields": {
+      "title": "Scientific Discoveries of the Month",
+      "content": "This month's scientific discoveries include...",
+      "published_date": "2024-05-24",
+      "topics": [5, 6],
+      "publishers": [9, 10]
+    }
+  },
+  {
+    "model": "app.newspaper",
+    "pk": 6,
+    "fields": {
+      "title": "Educational Reforms: A New Era",
+      "content": "Educational reforms are being implemented...",
+      "published_date": "2024-05-25",
+      "topics": [6, 7],
+      "publishers": [11, 12]
+    }
+  },
+  {
+    "model": "app.newspaper",
+    "pk": 7,
+    "fields": {
+      "title": "Environmental Issues: Global Warming",
+      "content": "Global warming is becoming a critical issue...",
+      "published_date": "2024-05-26",
+      "topics": [7, 8],
+      "publishers": [13, 14]
+    }
+  }
+]
