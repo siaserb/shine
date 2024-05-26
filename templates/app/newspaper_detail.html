@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>
+    {{ newspaper.title }}
+  </h1>
+
+  <p>Topics:
+    {% for topic in newspaper.topics.all %}
+      {{ topic.name }}
+    {% endfor %}
+  </p>
+
+  <div class="container">
+    <h1>
+      Redactors
+    </h1>
+    {% if newspaper in user.newspapers.all %}
+      <a href="{% url 'app:toggle-newspaper-assign' pk=newspaper.id %}" class="btn btn-danger link-to-page">
+        Delete me from this newspaper
+      </a>
+    {% else %}
+      <a href="{% url 'app:toggle-newspaper-assign' pk=newspaper.id %}" class="btn btn-success link-to-page">
+        Assign me to this newspaper
+      </a>
+    {% endif %}
+  </div>
+
+  <ul class="list-group list-group-flush">
+    {% for redactor in newspaper.publishers.all %}
+      <li class="list-group-item">{{ redactor.username }} ({{ redactor.first_name }} {{ redactor.last_name }})</li>
+    {% endfor %}
+  </ul>
+
+  <br>
+
+  <a href="{% url 'app:newspaper-delete' pk=newspaper.id %}" class="btn btn-danger link-to-page">
+    Delete
+  </a>
+
+  <a href="{% url 'app:newspaper-update' pk=newspaper.id %}" class="btn btn-secondary link-to-page">
+    Update
+  </a>
+{% endblock %}

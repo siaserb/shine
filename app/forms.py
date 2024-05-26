@@ -13,7 +13,7 @@ class NewspaperForm(forms.ModelForm):
 
     class Meta:
         model = Newspaper
-        fields = '__all__'
+        fields = "__all__"
 
 
 def validate_years_of_experience(years_of_experience):
@@ -22,7 +22,7 @@ def validate_years_of_experience(years_of_experience):
     return years_of_experience
 
 
-class RedactorCreateForm(forms.ModelForm):
+class RedactorCreateForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
         model = Redactor
         fields = UserCreationForm.Meta.fields + (
@@ -32,7 +32,9 @@ class RedactorCreateForm(forms.ModelForm):
         )
 
     def clean_years_of_experience(self):
-        return validate_years_of_experience(self.cleaned_data["years_of_experience"])
+        return validate_years_of_experience(
+            self.cleaned_data["years_of_experience"]
+        )
 
 
 class RedactorUpdateForm(forms.ModelForm):
@@ -41,7 +43,9 @@ class RedactorUpdateForm(forms.ModelForm):
         fields = ["years_of_experience"]
 
     def clean_years_of_experience(self):
-        return validate_years_of_experience(self.cleaned_data["years_of_experience"])
+        return validate_years_of_experience(
+            self.cleaned_data["years_of_experience"]
+        )
 
 
 class TopicNameSearchForm(forms.Form):
@@ -67,6 +71,5 @@ class NewspaperTitleSearchForm(forms.Form):
         max_length=255,
         required=False,
         label="",
-        widget=forms.TextInput(attrs={"placeholder": "Search by name"}),
+        widget=forms.TextInput(attrs={"placeholder": "Search by title"}),
     )
-
