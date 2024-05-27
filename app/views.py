@@ -120,7 +120,7 @@ class NewspaperDeleteView(LoginRequiredMixin, DeleteView):
     success_url = reverse_lazy("app:newspaper-list")
 
 
-class RedactorListView(ListView):
+class RedactorListView(LoginRequiredMixin, ListView):
     model = Redactor
     context_object_name = "redactors"
     paginate_by = 10
@@ -143,7 +143,7 @@ class RedactorListView(ListView):
         return queryset
 
 
-class RedactorDetailView(DetailView):
+class RedactorDetailView(LoginRequiredMixin, DetailView):
     model = Redactor
     queryset = Redactor.objects.prefetch_related("newspapers__topics")
 

@@ -66,6 +66,7 @@ a:focus {
     width: 100%;
     align-items: stretch;
     overflow-x: hidden;
+    border-radius: 15px;
 }
 
 #sidebar {

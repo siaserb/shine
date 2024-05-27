@@ -20,48 +20,23 @@
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
   <script src="{% static 'js/animations.js' %}"></script>
 </head>
+
 <body>
 <div class="content-container">
+
   <div class="wrapper">
     {% block sidebar %}
       {% include "includes/sidebar.html" %}
     {% endblock %}
-
     <div id="content">
-
-      {% block nav-panel %}
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-              <i class="fas fa-align-left"></i>
-              <span>Toggle Sidebar</span>
-            </button>
-            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-              <i class="fas fa-align-justify"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              {% if search_form %}
-                <div class="mx-auto">
-                  {% include "includes/search.html" %}
-                </div>
-              {% endif %}
-
-              {% block pagination %}
-                {% include "includes/pagination.html" %}
-              {% endblock %}
-            </div>
-          </div>
-        </nav>
-
+      {% block navigation %}
+        {% include "includes/navigation.html" %}
       {% endblock %}
 
       {% block content %}
       {% endblock %}
-
     </div>
+
   </div>
 </div>
 </body>
