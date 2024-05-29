@@ -4,7 +4,7 @@ black==24.4.2
 click==8.1.7
 crispy-bootstrap4==2024.1
 dj-database-url==2.2.0
-django==4.1
+django==4.2
 django-crispy-forms==2.1
 django-debug-toolbar==4.4.2
 django-erd==1.0
