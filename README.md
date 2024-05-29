@@ -4,7 +4,7 @@ App oriented to redactors for publishing their newspapers
 
 ## Check it out!
 
-[SHINE deployed to render]()
+[SHINE deployed to render](https://shine-wy53.onrender.com/)
 
 ## Installation
 
