@@ -29,7 +29,7 @@ urlpatterns = [
         name="topic-update"
     ),
     path(
-        "topics/<int:pk>/delete",
+        "topics/<int:pk>/delete/",
         TopicDeleteView.as_view(),
         name="topic-delete"
     ),
@@ -50,7 +50,7 @@ urlpatterns = [
         name="redactor-update",
     ),
     path(
-        "redactors/<int:pk>/delete",
+        "redactors/<int:pk>/delete/",
         RedactorDeleteView.as_view(),
         name="redactor-delete",
     ),
@@ -71,7 +71,7 @@ urlpatterns = [
         name="newspaper-update",
     ),
     path(
-        "newspapers/<int:pk>/delete",
+        "newspapers/<int:pk>/delete/",
         NewspaperDeleteView.as_view(),
         name="newspaper-delete",
     ),
