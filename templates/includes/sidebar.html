@@ -1,0 +1,31 @@
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Shine✨</h3>
+  </div>
+
+  <ul class="list-unstyled components">
+    <li>
+      <a href="{% url 'app:index' %}">Home</a>
+    </li>
+    <li>
+      <a href="{% url 'app:redactor-list' %}">Redactors</a>
+    </li>
+    <li>
+      <a href="{% url 'app:newspaper-list' %}">Newspapers</a>
+    </li>
+    <li>
+      <a href="{% url 'app:topic-list' %}">Topics</a>
+    </li>
+  </ul>
+
+  {% if user.is_authenticated %}
+    <ul class="list-unstyled CTAs">
+      <li><a href="{{ user.get_absolute_url }}" class="download">User: {{ user.get_username }}</a></li>
+      <li><a href="{% url 'logout' %}?next={{ request.path }}" class="article">Logout</a></li>
+    </ul>
+  {% else %}
+    <ul class="list-unstyled CTAs">
+      <li><a href="{% url 'login' %}?next={{ request.path }}" class="download">Login</a></li>
+    </ul>
+  {% endif %}
+</nav>

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <h1>
+      Newspaper List
+    </h1>
+    <a href="{% url 'app:newspaper-create' %}" class="btn btn-primary link-to-page">
+      Create
+    </a>
+  </div>
+
+  <br>
+
+  {% if newspapers %}
+    <table class="table">
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+      </tr>
+
+      {% for newspaper in newspapers %}
+        <tr>
+          <td>
+            <a id="record-detail-link" href="{% url 'app:newspaper-detail' pk=newspaper.id %}">{{ newspaper.id }}</a>
+          </td>
+          <td>
+            {{ newspaper.title }}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+  {% else %}
+    <p>There are no newspapers in the app.</p>
+  {% endif %}
+{% endblock %}
