@@ -46,8 +46,8 @@ class TopicListView(LoginRequiredMixin, ListView):
     template_name = "app/topic_list.html"
     paginate_by = 10
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super(TopicListView, self).get_context_data(**kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
         name = self.request.GET.get("name", "")
         context["search_form"] = TopicNameSearchForm(initial={"name": name})
         return context
@@ -82,8 +82,8 @@ class NewspaperListView(LoginRequiredMixin, ListView):
     context_object_name = "newspapers"
     paginate_by = 10
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super(NewspaperListView, self).get_context_data(**kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
         title = self.request.GET.get("title", "")
         context["search_form"] = NewspaperTitleSearchForm(
             initial={"title": title}
@@ -125,8 +125,8 @@ class RedactorListView(LoginRequiredMixin, ListView):
     context_object_name = "redactors"
     paginate_by = 10
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super(RedactorListView, self).get_context_data(**kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
         username = self.request.GET.get("username", "")
         context["search_form"] = RedactorUsernameSearchForm(
             initial={"username": username}
@@ -168,11 +168,10 @@ class RedactorDeleteView(LoginRequiredMixin, DeleteView):
 @login_required
 def toggle_assign_to_newspaper(request, pk):
     redactor = Redactor.objects.get(id=request.user.id)
-    if Newspaper.objects.get(id=pk) in redactor.newspapers.all():
+    if redactor.newspapers.filter(id=pk).exists():
         redactor.newspapers.remove(pk)
     else:
         redactor.newspapers.add(pk)
-    return HttpResponseRedirect(reverse_lazy(
-        "app:newspaper-detail",
-        args=[pk])
+    return HttpResponseRedirect(
+        reverse_lazy("app:newspaper-detail", args=[pk])
     )
