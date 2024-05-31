@@ -19,6 +19,8 @@ class NewspaperForm(forms.ModelForm):
 def validate_years_of_experience(years_of_experience):
     if years_of_experience >= 100:
         raise ValidationError("Years of experience must be less than 100")
+    elif years_of_experience <= 0:
+        raise ValidationError("Years of experience must be greater than 0")
     return years_of_experience
 
 
